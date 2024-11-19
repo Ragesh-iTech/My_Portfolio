@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.work-container{
+    padding: 3px 10px 5px 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: "ubuntu", sans-serif;
+}
+
+.work-container .work{
+    padding: 20px;
+    width: 350px;
+    height: 260px;
+    margin:  0 5px 50px 0;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 24px;
+    /* overflow-y: scroll; */
+    overflow: hidden;
+    background:#FFD000;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 0 3px 10px black;
+    transition: all 0.5s ease;
+}
+.work:hover{
+    background: #4a98f7;
+}
+.work h3{
+    color:blue;
+} 
+.work p{
+    font-weight: 420;
+}
+.work i{
+    font-size: 25px;
+}
+.work::-webkit-scrollbar{
+    display: none;
+}
+.about-container{
+    display: flex;
+    width: 100%;
+}
+.about-text{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.about-text h1{
+    font-size: 50px;
+    font-family: "Ubuntu", sans-serif;
+}
+.about-text p{
+    font-size: 30px;
+    font-weight: 500;
+    color: red;
+    font-family: "poppins";
+    
+}
+.about-img img{
+    width: 400px;
+    height: 400px;
+}
+.about-img .me{
+    display: flex;
+    padding: 5px 5px;
+    font-family: "poppins";
+    flex-direction: row;
+}
+@media screen and (max-width:450px) {
+    .about-img .me{
+        flex-direction: column;
+    }
+    
+}
+.me .me1{
+    padding: 0 5px;
+}
+.about-para-container{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: "Roboto" sans-serif;
+}
+.about-para p{
+    font-family:"poppins";
+    font-size: 18px;
+    font-weight: 500;
+}
+.about-para .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:200px;
+}
+.button .download-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 16px 25px;
+    border: none;
+    outline: none;
+    font-family: "poppins", sans-serif;
+    border-radius: 6px;
+    background-color: #4a98f7;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0,0,0, 0.3);
+}
+.download-btn.timer{
+    background: none;
+    color: black;
+    box-shadow: none;
+    font-size: 1.6rem;
+    pointer-events: none;
+    transition: none;
+}
+.button a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.6rem;
+}
+.download-btn1.timer  b{
+    color: #4a98f7;
+    padding: 0 8px;
+}
+.download-btn:hover{
+    background-color: blue;
+}
+.download-btn .icon{
+    font-size: 2rem;
+}
+.download-btn .text{
+    font-size: 1.5rem;
+    padding:  0 0 0 10px;
+}
+
+
+@media screen and (max-width:700px) {
+    .about-para-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .about-container{
+        display: flex;
+        width: 100%;
+    }
+    
+}
+
+/* count containers */
+
+.count-container{
+    font-family: "Ubuntu", sans-serif;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.count-container .count-boxs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.count-boxs .count-box{
+    display: flex;
+    justify-content: center;
+    border:none;
+    width: 200px;
+    background: #FFB700;   
+    align-items: center;
+    padding: 5px 10px;
+    height: 80px;
+    border-radius: 15px;
+    margin: 0 0 15px 0;
+    box-shadow: 0 5px 10px black;
+}
+.count-box:hover{
+    background: #4a98f7;
+    
+}
+.count-box .number{
+    font-size: 50px;
+    font-weight:500;
+    color: blue;
+    margin:0 8px 0 0;
+}
+.count-box .letter{
+    font-size: 18px;
+    font-weight: 500;
+}

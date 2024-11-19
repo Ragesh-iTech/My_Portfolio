@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Milonga&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Milonga&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "ubuntu", sans-serif; */
+}
+/* html,body{
+    width: 100%;
+    height: 100%;
+   
+} */
+.logo #h1{
+    font-family: "ubuntu", sans-serif  !important;
+}
+body{
+    background: url("../assets/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#nav{
+    justify-content: space-between;
+}
+nav{
+    position: fixed;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-family: "poppins", sans-serif;
+    width: 100%;
+    height: 70px;
+    padding: 10px 30px;
+    background: linear-gradient(135deg,rgba(255, 255, 255,0.1),rgba(255, 255, 255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255,0.18);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.37);
+}
+.logo{
+    color: black;
+    }
+.logo h1{
+    font-size: 35px;
+    font-family: 900 !important;
+    font-family: "ubuntu", sans-serif !important;
+} 
+nav ul{
+    display: flex;
+    gap: 30px;
+    /* align-items: center; */
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 3px 5px;
+    font-family: "ubuntu", sans-serif;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+nav ul li a:hover{
+    background-color: rgb(7, 79, 236, 0.5);
+    padding: 3px 5px ;
+    border-radius: 3px;
+    color: white;
+    font-size: 18px;
+    
+}
+.menu-icon{
+    display: none;
+}
+.menu-icon i{
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+}
+@media (max-width:900px) {
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+        overflow: hidden;
+        background: linear-gradient(135deg,rgba(255, 255, 255,0.1),rgba(255, 255, 255,0));
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+        border-bottom: 1px solid rgba(255, 255, 255,0.18);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.37);
+    }
+    nav{
+        box-shadow: none;
+        border-bottom: none;
+    }
+    nav ul li{
+        padding: 10px 0 10px 0;
+    }
+    .menu-icon{
+        display: block;        
+    }
+    #menuList{
+        transition: all 0.6s ease;
+    }
+}
+
+.container-fluid{
+    width: 100%;
+    height: 100vh;
+    padding: auto 0 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#main-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* image size and container */
+.ragesh_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.ragesh_image #img{
+    width: 600px;
+    height: 600px;
+    transition: all 1s ease;
+}
+.ragesh_image #img:hover{
+    transform: scale(1.2);
+}
+
+/* deisgn the text animation  */
+
+.ragesh_text{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding: 50px  0 0 0;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    padding: 30px;
+}
+.animation #hr{
+    color: black;
+    height: 5px;
+    
+}
+.animation p{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "ubuntu", sans-serif;
+}
+.ragesh_text #name-animation{
+    font-size: 60px;
+    font-family: "ubuntu", sans-serif;
+    letter-spacing: 8px;
+    }
+#name-animation{
+    color: transparent;
+    -webkit-text-stroke: 2px black;
+    position: relative;
+    width: auto;
+}
+#name-animation::before{
+    content: "Ragesh...";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color:black;
+    border-right: 3px solid black;
+    transition: 1s ease-in-out;
+}
+#name-animation:hover::before{
+    width: 50%;
+    
+}
+.animation span{
+    font-family: "ubuntu", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    
+}
+.animation .text{
+    position: relative;
+    color: red;
+    
+}
+.animation .text.first-text{
+    color: black;
+}
+#marquee p{
+    padding: 0 ;
+    margin: 0 0 10px 0;
+    font-size: 27px;
+    font-family: "ubuntu", sans-serif;
+}
+
+/* social icon designing  */
+.social_icons{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+.social_icons a{
+    margin: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.social_icons a:hover{
+    transform: scale(1.2);
+}
+.social_icons .fa-whatsapp, .fa-github, .fa-envelope, .fa-instagram{
+    padding: 10px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#linkedIn-btn{
+    background-color: #0072b1;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 24px;
+    color: white;
+    font-size: 19px;
+}
+
+/* display size  to change the alignments*/
+
+@media screen and (max-width:600px) {
+    #name-animation:hover::before{
+        width: 100%;
+        
+    }
+    .social_icons{
+        height: auto;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: row;
+    }
+    .ragesh_image #img{
+        width: 400px;
+        height: 400px;
+    }
+    .ragesh_text{
+        height: auto;
+    }
+    .ragesh_image{
+        height: auto;
+    }
+    #main-container{
+        flex-direction: column;
+        height: auto;
+    }
+    
+}
+@media screen and (max-width:950px) {
+    .ragesh_text{
+        height: auto;
+    }
+    .ragesh_image{
+        height: auto;
+    }
+    #main-container{
+        flex-direction: column;
+        height: auto;
+    }
+}
